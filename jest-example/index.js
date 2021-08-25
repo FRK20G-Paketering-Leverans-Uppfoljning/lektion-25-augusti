@@ -1,3 +1,5 @@
+let test = '';
+
 function add(numberOne, numberTwo) {
   return numberOne + numberTwo;
 }
@@ -14,4 +16,12 @@ function multiply(numberOne, numberTwo) {
   }
 }
 
-module.exports = { add, subtract, multiply }
+function capitalize(text) {
+  return text.charAt(0).toUpperCase() + text.slice(1);
+}
+
+function reset() {
+  test = '';
+}
+
+module.exports = { add, subtract, multiply, capitalize, reset }
